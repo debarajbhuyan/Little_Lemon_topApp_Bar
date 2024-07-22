@@ -16,6 +16,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
+
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TopAppBar(modifier: Modifier = Modifier) {
@@ -29,7 +31,6 @@ fun TopAppBar(modifier: Modifier = Modifier) {
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically) {
                 IconButton(onClick = {
-                    scope.launch {scaffoldState?.drawerState?.open()}
                 }) {
                     Image(
                         painter = painterResource(id = R.drawable.ic_hamburger_menu),
